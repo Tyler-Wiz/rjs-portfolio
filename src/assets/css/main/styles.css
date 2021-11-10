@@ -52,39 +52,50 @@ p {
 
 /* Hero */
 
-.intro{
-    display: flex;
-    justify-content: center;
-    padding: 3rem;
-    margin: 0 auto;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    text-transform: capitalize;
-    position: relative;
-    gap: 1.5rem;
+.hero{
     background-color: var(--background);
     color: var(--lightgrey);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+    padding: 5rem;
+    position: relative;
 }
 
-.intro_typing{
+.hero_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero_typing{
     text-transform: none;
     color: var(--primary);
+    margin-bottom: 1.5rem;
 }
 
-.intro_span{
+.hero_cursor{
+    content: '';
+    margin-left: .5rem;
+    background-color: var(--primary);
+}
+
+.hero_span{
     margin-left:.5rem;
     color: var(--primary);
 }
 
-.typing_cursor{
-    content: '';
-    margin-left: .5rem;
-    height: 1.5rem;
-    background-color: var(--primary);
+.hero_portfolio{
+    margin: 3rem 0 6rem 0;
+    padding:1.5rem 2.5rem;
+    border-radius:10px;
+    border: 1px solid var(--secondary);
+    cursor: pointer;
 }
 
-.arrow_down{
+.arrow_down {
     position: absolute;
     padding: 1.7rem 4rem;
     bottom: 0;
@@ -94,20 +105,87 @@ p {
     cursor: pointer;
 }
 
-.intro_portfolio{
-    margin:1rem 0 6rem 0;
-    padding:1.5rem 2.5rem;
-    border-radius:10px;
-    border: 1px solid var(--secondary);
-    cursor: pointer;
-}
-
 /* social Media */
 
-.social {
-    min-width: 35%;
-    margin-top:4rem;
+.social_container {
+    min-width: 40%;
     display: flex;
     justify-content: space-between;
-    font-size:2rem;
+}
+
+.social {
+    font-size: 2.5rem;
+    color: var(--lightgrey);
+}
+
+.youtube {
+    color: #a51507;
   }
+  
+.dribble {
+    color: #d0daf0;
+  }
+  
+.twitter {
+    color: #2985d1;
+}
+
+.linkedin{
+    color: rgb(19, 80, 179);
+    display: inline-block;
+}
+
+
+/* Nav Bar */
+
+.nav_container{
+    background-color: var(--background);
+    position: fixed;
+    height: 100vh;
+    width: 60%;
+    top: 0;
+    right: -1000%;
+    padding: 5rem 0 2rem 2rem;
+    z-index: 1;
+    list-style: none;
+    transition: .8s ease-in;
+}
+
+.nav_container.toggle {
+    right: 0;
+    transition: .4s ease-in-out;
+}
+
+.nav_list{
+    color: var(--lightgrey);
+    text-decoration: none;
+}
+
+.link_wrapper{
+    display: flex;
+    width: 40%;
+    align-items: center;
+}
+
+.nav_icon{
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+.nav_title{
+    align-self: center;
+}
+
+.nav_burger {
+    z-index: 3;
+    position: absolute;
+    top: 93%;
+    right: 10%;
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.nav_burger span{
+    position: absolute;
+}
