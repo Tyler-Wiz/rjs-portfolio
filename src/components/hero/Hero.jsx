@@ -4,13 +4,16 @@ import { motion } from 'framer-motion'
 import { bounce } from '../../utilities/Animations'
 import { Social } from '../Social';
 import { Nav } from '../Nav';
+import { Container } from '../styled/Container.styled';
+import { StyledHero,Arrow } from '../styled/Hero.Styled';
+import { ButtonStyled } from '../styled/Button.Styled';
 
 export const Hero = () => {
     return (
-        <section className='hero'>
-            <div className='hero_container'>
+        <StyledHero>
+            <Container>
                 <h1> Hi,</h1>
-                <h2 className='hero_typing'>
+                <h2>
                         <Typewriter
                             options={{
                             strings: [
@@ -26,19 +29,23 @@ export const Hero = () => {
                             }}
                         />
                 </h2>
-                <h3>I design and develop experiences that make people's live<span className='hero_span'>Simple</span></h3>
-                <h3 className='hero_portfolio'>See Portfolio</h3>
-                <motion.div 
-                variants={bounce}
-                initial='hidden'
-                animate='visible'
-                className='arrow_down'
-                >
-                    <FaIcons.FaArrowDown />
-                </motion.div>
-                <Social />
-                <Nav/>
-            </div>
-        </section>
+                <h3>I design and develop experiences that make people's live<span>Simple</span></h3>
+                
+                <ButtonStyled>See Portfolio</ButtonStyled>
+
+                <Arrow>
+                    <motion.div 
+                    variants={bounce}
+                    initial='hidden'
+                    animate='visible'
+                    >
+                        <FaIcons.FaArrowDown />
+                    </motion.div>
+                </Arrow>
+
+            <Social />
+            <Nav/>
+            </Container>
+        </StyledHero>
     )
 }
