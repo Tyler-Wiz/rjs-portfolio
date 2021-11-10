@@ -1,6 +1,5 @@
 import { aboutMe, Avatar } from "../data/AboutData"
 import { MySkills } from "./MySkills"
-import { Work } from "./Work"
 
 export const About = () => {
     const {img} = Avatar
@@ -18,8 +17,7 @@ export const About = () => {
                     </li>
                 ))}
             </ul>
-            <MySkills />
-            <Work />
+            <MySkills/>
        </section>
     )
 }

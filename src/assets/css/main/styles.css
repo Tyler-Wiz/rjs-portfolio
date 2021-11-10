@@ -41,11 +41,15 @@ h1 {font-size: clamp(2.5rem, 2.5vw, 4rem);}
 h2 {font-size: clamp(2rem, 2.5vw, 3.5rem);}
 h3 {font-size: clamp(1.8rem, 2.5vw, 3rem);}
 h4 {font-size: clamp(1.5rem, 2.5vw, 2.5rem);}
+h5 {font-size: clamp(1.3rem, 2.5vw, 2.2rem);}
 p {
     font-size: clamp(1.1rem, 2.5vw, 2.1rem);
     font-weight: 400;
 }
 
+.skill_info h4{
+   font-weight: 700;
+}
 /* ==========
    Layout
 ========== */
@@ -195,7 +199,6 @@ p {
 
 .about_index{
     padding: 1rem;
-    height: 100vh;
     background-color: var(--lightgrey);
 }
 
@@ -213,6 +216,7 @@ p {
     grid-template-columns: repeat(2, 1fr);
     list-style-type: none;
     text-transform: capitalize;
+    margin-bottom: 7rem;
 }
 
 .about_info li{
@@ -223,3 +227,50 @@ p {
     display: block;
     font-weight: 900;
 }
+
+/* Skills */
+
+.skill_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem;
+    margin-bottom: 7rem;
+}
+.skill_info{
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem 1.2rem;
+}
+
+.skill_progress--bar{
+    width: 100%;
+    height: .7rem;
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.css,.html, .angular, .vue, .php, .ux, .jquery, .react{
+    background: var(--primary);
+	box-shadow: 0 3px 3px -5px var(--secondary), 0 2px 5px var(--primaryPink);
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	transition: 1s ease 0.3s;
+}
+
+.css{width: 90%;}
+.html{width: 78%;}
+.angular{width: 65%;}
+.vue{width: 90%; }
+.php{width: 60%; }
+.ux{width: 75%;}
+.jquery{width: 80%;}
+.react{width: 75%;}
