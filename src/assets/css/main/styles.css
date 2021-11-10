@@ -194,7 +194,7 @@ p {
 /* about me */
 
 .about_index{
-    padding: 2rem;
+    padding: 1rem;
     height: 100vh;
     background-color: var(--lightgrey);
 }
@@ -205,5 +205,21 @@ p {
     height: 30rem;
     margin: 4rem auto;
     border-radius: 50%;
-    border: 6px solid var(--lightgrey);
+    border: 6px solid var(--background);
+}
+
+.about_info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.about_info li{
+    padding: 1.2rem;
+}
+
+.about_metainfo{
+    display: block;
+    font-weight: 900;
 }
