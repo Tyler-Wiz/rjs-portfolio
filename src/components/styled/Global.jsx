@@ -28,6 +28,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.8;
     letter-spacing: 0.1rem;
+    position: relative;
 }
 
 /* ================
@@ -50,3 +51,19 @@ p {
 }
 
 `
+
+export const lightTheme = {
+    body:'var(--lightgrey)',
+    text: '#121212',
+    typing:'#000',
+    port:'#000',
+    themeSwitch:'var(--primary)'
+}
+
+export const darkTheme = {
+    body:'var(--background)',
+    text: '#fff',
+    typing:'var(--primary)',
+    port:'var(--lightgrey)',
+    themeSwitch:'#e4e3e3'
+}

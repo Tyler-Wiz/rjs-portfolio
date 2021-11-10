@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const StyledHero = styled.section`
-    background-color: var(--background);
-    color: var(--lightgrey);
+    background-color: ${({ theme }) => theme.body};;
+    color: ${({ theme }) => theme.text};
     height: 100vh;
     position: relative;
     display: flex;

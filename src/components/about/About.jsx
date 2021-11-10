@@ -1,10 +1,12 @@
 import { aboutMe, Avatar } from "../data/AboutData"
 import { MySkills } from "./MySkills"
 import { SkillData } from '../data/SkillData'
+import { ToggleVisibility } from "../../utilities/ToggleVisibility"
 
 export const About = () => {
     const {img} = Avatar
-    
+    const[isVisible] = ToggleVisibility()
+
     return (
         <>
         <section className='about_index'>
@@ -20,11 +22,11 @@ export const About = () => {
                     ))}
                 </ul>
         <section>
-            <ul className='skill_container'>
+            {isVisible ? <ul className='skill_container'>
              {SkillData.map((item, i) => (
                     <MySkills key={i} item={item}/>
                 ))}
-            </ul>
+            </ul> : ''}
         </section>
         </section>
         

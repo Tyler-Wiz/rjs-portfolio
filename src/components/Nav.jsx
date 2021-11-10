@@ -11,7 +11,7 @@ export const Nav = () => {
             <HamburgerIcons onClick={openElement}>
                   {IsOpen ? <span>{hamburger.close}</span> : <span>{hamburger.menu}</span> }
             </HamburgerIcons>
-            <StyledNav visibility={IsOpen} >
+            <StyledNav ShowMenu={IsOpen} >
                 <ul>
                     {NavData.map((item, id) => (
                         <li key={id}>

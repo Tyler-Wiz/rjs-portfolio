@@ -6,10 +6,10 @@ export const StyledNav = styled.nav`
     height: 70vh;
     width: 60%;
     top: 3%;
-    right: ${({visibility}) => visibility ? '0px' : '-1000px'};
+    right: ${({ShowMenu}) => ShowMenu ? '0px' : '-1000px'};
     padding: 5rem 0 2rem 2rem;
     z-index: 1;
-    transition: ${({visibility}) => visibility ? '.5s ease-in-out' : '1s ease-in-out'};
+    transition: ${({ShowMenu}) => ShowMenu ? '.5s ease-in-out' : '1s ease-in-out'};
     
     li{
         list-style: none;

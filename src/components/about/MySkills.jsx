@@ -3,16 +3,15 @@ import { useEffect, useState } from "react"
 export const MySkills = ({item:{name, percentage}}) => {
     const [style, setStyle] = useState({});
     const [bar, setBar] = useState('80')
-	
+    
 	setTimeout(() => {
 		const newStyle = {
 			opacity: 1,
 			width: `${bar}%`
 		}
 		setStyle(newStyle);
-	}, 200);
+	}, 300);
 
- 
     useEffect(() => {
         if(name === 'HTML') setBar('78')
         if(name === 'PHP') setBar('60')
@@ -24,6 +23,7 @@ export const MySkills = ({item:{name, percentage}}) => {
         if(name === 'JQuery') setBar('80')
     }, [bar, name])
 
+
     return (
         <li>
             <div className='skill_info'>
@@ -31,8 +31,7 @@ export const MySkills = ({item:{name, percentage}}) => {
                 <h5>{percentage}</h5>
             </div>
             <div className='skill_progress--bar'>
-                <div className='progress-done' style={style}>
-                </div>
+                <div className='progress-done' style={style}></div>
             </div>
         </li>    
     )
