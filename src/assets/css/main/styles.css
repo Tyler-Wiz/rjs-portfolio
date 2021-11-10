@@ -61,6 +61,7 @@ p {
     text-transform: capitalize;
     padding: 5rem;
     position: relative;
+
 }
 
 .hero_container{
@@ -188,4 +189,21 @@ p {
 
 .nav_burger span{
     position: absolute;
+}
+
+/* about me */
+
+.about_index{
+    padding: 2rem;
+    height: 100vh;
+    background-color: var(--lightgrey);
+}
+
+.about_img{
+    display: block;
+    width: 30rem;
+    height: 30rem;
+    margin: 4rem auto;
+    border-radius: 50%;
+    border: 6px solid var(--lightgrey);
 }

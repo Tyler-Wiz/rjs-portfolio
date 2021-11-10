@@ -1,10 +1,10 @@
 import {useState} from "react"
 
 export const Toggle = () => {
-   const [open, setOpen] = useState(false)
+   const [isOpen, setIsOpen] = useState(false)
    const openElement = () => {
-       setOpen(!open)
+       setIsOpen(!isOpen)
    }
 
-    return [open, openElement]
+    return [isOpen, openElement]
 }

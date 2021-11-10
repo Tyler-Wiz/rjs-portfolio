@@ -3,17 +3,16 @@ import { Toggle } from '../utilities/Toggle'
 import { hamburger } from './data/NavData'
 
 export const Nav = () => {
-
-    const [open, openElement] = Toggle()
+    const [IsOpen, openElement] = Toggle()
 
     return (
         <div>
             <div>
                 <div className='nav_burger' onClick={openElement}>
-                    {open ? <span>{hamburger.close}</span> : <span>{hamburger.menu}</span> }
+                    {IsOpen ? <span>{hamburger.close}</span> : <span>{hamburger.menu}</span> }
                 </div>
             </div>
-            <ul className={open ? 'nav_container toggle' : 'nav_container' }>
+            <ul className={IsOpen ? 'nav_container toggle' : 'nav_container' }>
                 {NavData.map((item, id) => (
                     <li key={id}>
                         <a className='nav_list' href={item.path}>
