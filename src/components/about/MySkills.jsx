@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react"
+import { Flex } from '../styled/Flex'
+import { StyledSkills } from "../styled/Skills.Styled";
+
 
 export const MySkills = ({item:{name, percentage}}) => {
     const [style, setStyle] = useState({});
@@ -26,13 +29,14 @@ export const MySkills = ({item:{name, percentage}}) => {
 
     return (
         <li>
-            <div className='skill_info'>
+            <Flex>
                 <h4>{name}</h4>
                 <h5>{percentage}</h5>
-            </div>
-            <div className='skill_progress--bar'>
-                <div className='progress-done' style={style}></div>
-            </div>
+            </Flex>
+            <StyledSkills>
+                <div style={style}></div>
+            </StyledSkills>
         </li>    
+    
     )
 }

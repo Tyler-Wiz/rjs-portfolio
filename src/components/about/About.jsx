@@ -2,6 +2,9 @@ import { aboutMe, Avatar } from "../data/AboutData"
 import { MySkills } from "./MySkills"
 import { SkillData } from '../data/SkillData'
 import { ToggleVisibility } from "../../utilities/ToggleVisibility"
+import { SectionContainer } from '../styled/Container.styled'
+import { StyledAbout } from "../styled/About.Styled"
+import { Work } from "./Work"
 
 export const About = () => {
     const {img} = Avatar
@@ -9,26 +12,28 @@ export const About = () => {
 
     return (
         <>
-        <section className='about_index'>
-                <div>
-                    <img className='about_img' src={img} alt="" />
-                </div>
-                <ul className='about_info'>
-                {aboutMe.map((item, id) => (
-                        <li key={id}>
-                            <p>{item.meta}:</p> 
-                            <p className='about_metainfo'>{item.metaInfo}</p> 
-                        </li>
-                    ))}
-                </ul>
-        <section>
-            {isVisible ? <ul className='skill_container'>
-             {SkillData.map((item, i) => (
-                    <MySkills key={i} item={item}/>
+        <StyledAbout>
+            <div>
+                <img src={img} alt="" />
+            </div>
+            <ul>
+            {aboutMe.map((item, id) => (
+                    <li key={id}>
+                        <p>{item.meta}:</p> 
+                        <h5>{item.metaInfo}</h5> 
+                    </li>
                 ))}
-            </ul> : ''}
-        </section>
-        </section>
+            </ul>
+            <SectionContainer>
+                {isVisible ? <ul>
+                {SkillData.map((item, i) => (
+                        <MySkills key={i} item={item}/>
+                    ))}
+                </ul> : ''}
+            </SectionContainer>
+            <Work/>
+        </StyledAbout>
+        
         
        </>
 

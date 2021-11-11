@@ -4,106 +4,11 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.skill_info h4{
-   font-weight: 700;
-}
-
 .hero_cursor{
     content: '';
     margin-left: .5rem;
     background-color: var(--primary);
 }
 
-/* about me */
 
-.about_index{
-    padding: 1rem;
-    background-color: var(--lightgrey);
-}
 
-.about_img{
-    display: block;
-    width: 30rem;
-    height: 30rem;
-    margin: 4rem auto;
-    border-radius: 50%;
-    border: 6px solid var(--background);
-}
-
-.about_info{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    list-style-type: none;
-    text-transform: capitalize;
-    margin-bottom: 7rem;
-}
-
-.about_info li{
-    padding: 1.2rem;
-}
-
-.about_metainfo{
-    display: block;
-    font-weight: 900;
-}
-
-/* Skills */
-
-.skill_container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 1rem;
-    margin-bottom: 7rem;
-}
-.skill_info{
-    display: flex;
-    justify-content: space-between;
-    padding: .3rem 1.2rem;
-}
-
-.skill_progress--bar{
-    width: 100%;
-    height: .7rem;
-    background-color: white;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-}
-
-.css,.html, .angular, .vue, .php, .ux, .jquery, .react{
-    background: var(--primary);
-	box-shadow: 0 3px 3px -5px var(--secondary), 0 2px 5px var(--primaryPink);
-	border-radius: 20px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 100%;
-	opacity: 1;
-	transition: 1s ease 0.3s;
-}
-
-.css{width: 90%;}
-.html{width: 78%;}
-.angular{width: 65%;}
-.vue{width: 90%; }
-.php{width: 60%; }
-.ux{width: 75%;}
-.jquery{width: 80%;}
-.react{width: 75%;}
-
-.progress-done {
-	background: linear-gradient(to left, #F2709C, #FF9472);
-	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
-	border-radius: 20px;
-	color: #fff;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 0;
-	opacity: 0;
-	transition: 1s ease 0.3s;
-}

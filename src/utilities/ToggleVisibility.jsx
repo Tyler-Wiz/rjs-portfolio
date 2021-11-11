@@ -5,7 +5,7 @@ export const ToggleVisibility = () => {
 
     useEffect(() => {
         const Visibility = () => {
-          if (window.pageYOffset > 500) setIsVisible(true);
+          if (window.pageYOffset > 700) setIsVisible(true);
         }
         window.addEventListener("scroll", Visibility);
         return() => setIsVisible(false)
