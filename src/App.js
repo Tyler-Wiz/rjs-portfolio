@@ -5,6 +5,7 @@ import { GlobalStyles, lightTheme, darkTheme } from './components/styled/Global'
 import { ThemeProvider } from 'styled-components'
 import {ThemeSwitch} from '../src/components/ThemeSwitcher/ThemeSwitch.jsx'
 import { ToggleTheme } from './components/ThemeSwitcher/ToggleTheme';
+import { Portfolio } from './components/portfolio/Portfolio';
 
 function App() {
   const [theme, toggleTheme ] = ThemeSwitch()
@@ -17,6 +18,7 @@ function App() {
          <ToggleTheme theme={theme}  toggleTheme={toggleTheme}/>
           <Hero />
           <About/>
+          <Portfolio/>
       </ThemeProvider>
     </div>
   );
