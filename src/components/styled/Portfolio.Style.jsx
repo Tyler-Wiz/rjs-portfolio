@@ -35,12 +35,13 @@ export const PortfolioContent = styled.div`
   transition-delay: .5s;
 `
 
-export const StylePorfolio = styled.li`
+export const StylePorfolio = styled.div`
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
     position: relative;
+    cursor: pointer;
 
     img{
         position:absolute;

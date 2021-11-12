@@ -32,10 +32,10 @@ export const Portfolio = () => {
         
       <FilterPortolio filter={filter} setFilter={setFilter}/>
       <ul>
-        {data.map(item =>
+        {data.map((item , i) =>
           item.filtered === true ? 
-          <StylePorfolio>
-               <li>
+          <StylePorfolio key={i}>
+               <li >
                   <div>
                      <img src={item.imgUrl} alt="" />  
                   </div>

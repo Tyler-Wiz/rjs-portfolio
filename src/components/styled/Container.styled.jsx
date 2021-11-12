@@ -9,7 +9,6 @@ export const Container = styled.div`
 
 export const SectionContainer = styled.section`
     padding: 1rem;
-    margin-bottom:4rem;
     background-color: ${({Bg}) => Bg ? 'var(--background)' : 'var(--lightgrey)'};
     color: ${({Bg}) => Bg ? 'var(--lightgrey)' : 'var(--background)'};
 

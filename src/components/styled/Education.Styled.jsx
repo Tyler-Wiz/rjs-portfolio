@@ -10,7 +10,6 @@ import styled from "styled-components";
      h5{
         font-size: 1.2rem;
         background-color: #d6d6d628;
-        padding: 0.1rem 1rem;
         border-radius:10px;
         font-weight:300;
      }
