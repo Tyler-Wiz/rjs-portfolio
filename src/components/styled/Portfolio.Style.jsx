@@ -69,7 +69,7 @@ export const StylePorfolio = styled.div`
 
     &:hover ${PortfolioBox} ${PortfolioContent} {
         transform: translateX(0px);
-     transition-delay: 0;
+        transition-delay: 0;
     }
 `
 

@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const SectionContainer = styled.section`
     padding: 1rem;
-    background-color: ${({Bg}) => Bg ? 'var(--background)' : 'var(--lightgrey)'};
+    background-color: ${({Bg}) => Bg };
     color: ${({Bg}) => Bg ? 'var(--lightgrey)' : 'var(--background)'};
 
     ul {

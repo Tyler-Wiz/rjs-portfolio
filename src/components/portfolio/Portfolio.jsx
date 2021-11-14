@@ -23,7 +23,7 @@ export const Portfolio = () => {
 
 
     return (
-    <SectionContainer Bg='i'>
+    <SectionContainer Bg='var(--background)'>
         <div className='portfolio_desc'>
             <h2>My portfolio</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos reprehenderit necessitatibus doloremque labore fuga autem nam.</p>
