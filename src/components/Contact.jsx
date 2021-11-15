@@ -37,11 +37,13 @@ export const Contact = () => {
                     />
                      
                 </ContactInputFlex>
+
+                {/* handle Name Required Errors */}
                 {errors.name && errors.name.type === "required" && (
                         <p>Name is required</p>
                  )}
 
-                 {/* contact name Ends */}
+                 {/* Contact Name Ends */}
 
                 <ContactInputFlex>
                     <ContactIcon>
@@ -65,7 +67,10 @@ export const Contact = () => {
                     />
                 </ContactInputFlex>
 
+                {/* handle Email Required Errors */}
                 {errors.email && ( <p>{errors.email.message}</p> ) }
+
+                {/* Contact Email Ends */}        
 
                 <ContactInputFlex>
                     <ContactIcon>
@@ -90,7 +95,10 @@ export const Contact = () => {
                      
                 </ContactInputFlex>
 
+                {/* handle PhoneNumber Required Errors */}
                 {errors.email && ( <p>{errors.phone.message}</p> ) }
+ 
+                {/* Contact PhoneNumber Ends */}  
 
                 <ContactInputFlex> 
                     <ContactTextArea>
@@ -108,11 +116,12 @@ export const Contact = () => {
                     
                 </ContactInputFlex>
 
+                {/* handle Message Required Errors */}
                 {errors.name && errors.message.type === "required" && (
                         <p>Message is required</p>
                     )}
             
-                 
+                 {/* Contact Message Ends */}  
 
                   <Flex>
                     <button>
