@@ -41,6 +41,8 @@ export const Contact = () => {
                         <p>Name is required</p>
                  )}
 
+                 {/* contact name Ends */}
+
                 <ContactInputFlex>
                     <ContactIcon>
                         <HiIcons.HiMail />
