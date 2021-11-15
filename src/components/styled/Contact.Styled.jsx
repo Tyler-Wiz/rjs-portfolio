@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StyledContact = styled.form`
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     padding: 3rem;
     margin: 3rem auto;
     color: black;
@@ -26,12 +26,11 @@ export const StyledContact = styled.form`
     }
 
     button {
-        width: 30%;
+        flex:1;
         padding: 1rem 3rem;
         background-color: white;
         border: none;
         position: relative;
-        left: 58%;
         font-family: 'Montserrat', sans-serif;
         border-top-left-radius:10px;
         cursor: pointer;
@@ -52,7 +51,7 @@ export const StyledContact = styled.form`
    transform: scaleX(0);
    transition: transform 0.5s ease-in-out;
    transform-origin:right ;
-   transition-delay: .1s;
+   transition-delay: .05s;
    color: white;
    border-top-left-radius:10px;
    border-left:1px solid var(--primary);
@@ -86,7 +85,7 @@ export const ContactIcon = styled.div`
      left: 2%;
      transform: translateX(-2%), translateY(-30%);
      font-size:2.2rem;
-     color: var(--primary);
+     color: black;
 
 
     &::after{
@@ -134,5 +133,4 @@ export const ContactButtonIcon = styled.div`
        border-bottom-right-radius:10px;
        color: white;      
        margin-right: .4rem;
-       
 `

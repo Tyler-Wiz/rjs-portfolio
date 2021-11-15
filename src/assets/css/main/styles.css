@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300;1,400;1,900&display=swap');
 
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
 .hero_cursor{
     content: '';
     margin-left: .5rem;

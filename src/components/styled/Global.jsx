@@ -2,9 +2,12 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300;1,400;1,900&display=swap');
+
 /* ==================
       Color Scheme
 ================== */
+
 :root{
     --background:#1A1A1D;
     --lightgrey:#f1f1f1;
@@ -18,6 +21,11 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 html{
     font-size: 10px;
