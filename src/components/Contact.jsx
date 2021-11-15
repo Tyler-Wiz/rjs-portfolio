@@ -35,53 +35,83 @@ export const Contact = () => {
                         name='name'
                         placeholder='name here'
                     />
-                     {errors.name && errors.name.type === "required" && (
-                        <span>Name is required</span>
-                     )}
+                     
                 </ContactInputFlex>
+                {errors.name && errors.name.type === "required" && (
+                        <p>Name is required</p>
+                 )}
+
                 <ContactInputFlex>
                     <ContactIcon>
                         <HiIcons.HiMail />
                     </ContactIcon>
                     <input 
-                        {...register("email", { required: true })}
+                        {...register(
+                            "email",
+                            {
+                              required: "Email is Required",
+                              pattern: {
+                                value: /\S+@\S+\.\S+/,
+                                message: "Entered value does not match email format",   
+                              },
+                            },
+                            { required: true }
+                          )}
                         type='email'
                         name='email'
                         placeholder='Your Email '
                     />
-                    {errors.name && errors.email.type === "required" && (
-                        <span>Your Email is required</span>
-                     )}
                 </ContactInputFlex>
+
+                {errors.email && ( <p>{errors.email.message}</p> ) }
+
                 <ContactInputFlex>
                     <ContactIcon>
                         <HiIcons.HiPhone />
                     </ContactIcon>
                     <input 
+                        {...register(
+                        "phone",
+                        {
+                          required: "Email is Required",
+                          pattern: {
+                            value: /^\d{10}$/,
+                            message: "Entered value does not match phone format",
+                          },
+                        },
+                        { required: true }
+                       )}
                         type='text'
                         name='phone'
                         placeholder='phone'
-                        {...register("phone", {
-                            required: "required",
-                          })}
                     />
+                     
                 </ContactInputFlex>
+
+                {errors.email && ( <p>{errors.phone.message}</p> ) }
+
                 <ContactInputFlex> 
                     <ContactTextArea>
                         <TiIcons.TiMessageTyping/>
                     </ContactTextArea>
                     <textarea
+                       {...register("message", { required: true })}
                         name="message" 
                         id="" 
                         cols="30" 
                         rows="10" 
                         placeholder='Typing Your Message Here'
-                        {...register("message", {
-                            required: "required",
-                          })}
                     > 
                     </textarea>
+                    
                 </ContactInputFlex>
+
+                {errors.name && errors.message.type === "required" && (
+                        <p>Message is required</p>
+                    )}
+            
+                 
+
                   <Flex>
                     <button>
                         Submit
