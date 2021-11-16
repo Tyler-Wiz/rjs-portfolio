@@ -10,13 +10,12 @@ export const StlyedAddress = styled.div`
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
 
-    h2{
-        margin-bottom: 2.5rem;
+    h5 {
+        margin-left: 1rem;
     }
 
-    h5 {
-        margin: 2rem 0 0 2rem;
-
+    h2 {
+        margin-bottom: 3rem;
     }
 
 `
@@ -26,4 +25,5 @@ export const AddressDtl = styled.div`
     display: flex;
     align-items: center;
     font-size: 3rem;
+    margin: 0 0 1rem 0;
 `

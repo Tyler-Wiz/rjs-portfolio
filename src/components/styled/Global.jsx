@@ -1,9 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,300;1,400;1,900&display=swap');
-
 /* ==================
       Color Scheme
 ================== */
@@ -48,14 +45,14 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
 }
 
-h1 {font-size: clamp(2.5rem, 2.5vw, 4rem);}
-h2 {font-size: clamp(2rem, 2.5vw, 3.5rem);}
-h3 {font-size: clamp(1.8rem, 2.5vw, 3rem);}
-h4 {font-size: clamp(1.5rem, 2.5vw, 2.5rem);}
-h5 {font-size: clamp(1.3rem, 2.5vw, 2.2rem);}
+h1 {font-size: 2.5rem}
+h2 {font-size:2rem}
+h3 {font-size: 1.8rem }
+h4 {font-size: 1.5rem}
+h5 {font-size: 1.3rem}
 p {
-    font-size: clamp(1.1rem, 2.5vw, 2.1rem);
-    font-weight: 400;
+    font-size:1.1rem;
+    font-weight:400;
 }
 
 `

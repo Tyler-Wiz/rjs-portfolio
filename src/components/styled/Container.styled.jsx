@@ -20,8 +20,5 @@ export const SectionContainer = styled.section`
         text-decoration: none;
     }
 
-    img{
-        width: 100%;
-    }
 
 `

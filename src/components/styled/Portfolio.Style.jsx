@@ -1,5 +1,14 @@
 import styled from "styled-components"
 
+export const PortfolioTitle = styled.div`
+    padding: 2rem;
+    
+    h2{
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+`
+
 export const PortfolioBox = styled.div`
     position:absolute;
     top: 0;
@@ -35,15 +44,19 @@ export const PortfolioContent = styled.div`
   transition-delay: .5s;
 `
 
-export const StylePorfolio = styled.div`
-    max-width: 1200px;
+export const StylePorfolio = styled.ul`
+    max-width: 1600px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
     flex-wrap:wrap;
     position: relative;
     cursor: pointer;
 
-    img{
+    li > h2{
+        margin: 2rem;
+    }
+
+    li > img{
         position:absolute;
         top: 0;
         left: 0;
@@ -52,22 +65,22 @@ export const StylePorfolio = styled.div`
         object-fit: cover;
     }
 
-    li{
+    li {
         position: relative;
-        min-width: 35rem;
-        min-height: 28rem;
+        width: 45rem;
+        height: 28rem;
         margin: 1rem;
         overflow: hidden;
     }
 
-    &:hover ${PortfolioBox}::before {
+    & li:hover ${PortfolioBox}::before {
         transform: scaleX(1);
         transition: transform 0.5s ease-in-out;
         transform-origin:right ;
         transition-delay: 0;  
     }
 
-    &:hover ${PortfolioBox} ${PortfolioContent} {
+    & li:hover ${PortfolioBox} ${PortfolioContent} {
         transform: translateX(0px);
         transition-delay: 0;
     }

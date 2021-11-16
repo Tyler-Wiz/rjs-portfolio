@@ -2,7 +2,8 @@ import {useState, useEffect } from "react";
 import { PortfolioData } from "../data/PortfolioData";
 import { FilterPortolio } from "./FilterPortolio";
 import {SectionContainer} from '../styled/Container.styled'
-import { StylePorfolio,PortfolioContent, PortfolioBox } from "../styled/Portfolio.Style";
+import { StylePorfolio,PortfolioContent, PortfolioBox, PortfolioTitle } from "../styled/Portfolio.Style";
+import { Title } from "../styled/Title"
 
 export const Portfolio = () => {
    const [filter, setFilter] = useState('All')
@@ -24,18 +25,16 @@ export const Portfolio = () => {
 
     return (
     <SectionContainer Bg='var(--background)'>
-        <div className='portfolio_desc'>
-            <h2>My portfolio</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos reprehenderit necessitatibus doloremque labore fuga autem nam.</p>
-        </div>
-
-        
+      <PortfolioTitle>
+        <Title>My portfolio</Title>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos reprehenderit necessitatibus doloremque labore fuga autem nam.</p>
+      </PortfolioTitle>
+    
       <FilterPortolio filter={filter} setFilter={setFilter}/>
-      <ul>
+      <StylePorfolio>
         {data.map((item , i) =>
           item.filtered === true ? 
-          <StylePorfolio key={i}>
-               <li >
+               <li key={i}>
                   <div>
                      <img src={item.imgUrl} alt="" />  
                   </div>
@@ -46,10 +45,9 @@ export const Portfolio = () => {
                     </PortfolioContent>   
                   </PortfolioBox>  
                 </li>
-            </StylePorfolio>  
           : '' 
         )}
-      </ul>
+      </StylePorfolio>
         
       </SectionContainer>
     )

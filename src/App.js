@@ -7,6 +7,7 @@ import {ThemeSwitch} from '../src/components/ThemeSwitcher/ThemeSwitch.jsx'
 import { ToggleTheme } from './components/ThemeSwitcher/ToggleTheme';
 import { Portfolio } from './components/portfolio/Portfolio';
 import { Contact } from './components/Contact';
+import { Blog } from './components/blog/Blog';
 
 function App() {
   const [theme, toggleTheme ] = ThemeSwitch()
@@ -20,6 +21,7 @@ function App() {
           <Hero />
           <About/>
           <Portfolio/>
+          <Blog/>
           <Contact />
       </ThemeProvider>
     </div>

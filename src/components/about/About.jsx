@@ -8,6 +8,7 @@ import { Work } from "./Work"
 import { EducationData, AchievementData } from "../data/E&AData"
 import { Education } from "./Education"
 import { Experience } from "./Experience"
+import { Title } from "../styled/Title"
 
 export const About = () => {
     const {img} = Avatar
@@ -16,6 +17,9 @@ export const About = () => {
     return (
         <>
         <StyledAbout>
+            <Title color='var(--background)'>
+                About Me
+            </Title>
             <div>
                 <img src={img} alt="" />
             </div>
@@ -35,7 +39,9 @@ export const About = () => {
                 </ul> : ''}
             </SectionContainer>
             <Work/>
-            <h2>Education & Experience</h2>
+            <Title color='var(--background)'>
+                Education & Experience
+            </Title>
             <SectionContainer>
                 <ul>
                     {EducationData.map((data, i) => (

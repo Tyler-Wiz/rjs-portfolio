@@ -10,11 +10,11 @@ export const StyledContact = styled.form`
     background-color: var(--lightgrey);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-    p {
+    p{ 
+        margin-bottom: 1rem;
         color: var(--primary);
-        margin: 0 0 1rem 0;
     }
-   
+
     input, textarea{
         width: 100%;
         outline: none;
@@ -78,9 +78,7 @@ export const ContactInputFlex = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-
-  
-
+    
 `
 
 export const ContactIcon = styled.div`
@@ -91,7 +89,7 @@ export const ContactIcon = styled.div`
      left: 2%;
      transform: translateX(-2%), translateY(-30%);
      font-size:2.2rem;
-     color: black;
+     color: var(--primary);
 
 
     &::after{

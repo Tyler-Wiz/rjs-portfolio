@@ -1,18 +1,18 @@
 import * as FaIcons from 'react-icons/fa'
 import Typewriter from 'typewriter-effect';
-import { motion } from 'framer-motion'
-import { bounce } from '../../utilities/Animations'
 import { Social } from '../Social';
 import { Nav } from '../Nav';
 import { Container } from '../styled/Container.styled';
 import { StyledHero,Arrow } from '../styled/Hero.Styled';
 import { ButtonStyled } from '../styled/Button.Styled';
 
+
 export const Hero = () => {
     return (
         <StyledHero>
             <Container>
                 <h1> Hi,</h1>
+                {/* Homepage Typewriter Effect */}
                 <h2>
                         <Typewriter
                             options={{
@@ -31,16 +31,12 @@ export const Hero = () => {
                 </h2>
                 <h3>I design and develop experiences that make people's live<span>Simple</span></h3>
                 
+                {/* Homepage Portfolio Button */}
                 <ButtonStyled>See Portfolio</ButtonStyled>
 
+                {/* Homepage ClickDown Arrow */}
                 <Arrow>
-                    <motion.div 
-                    variants={bounce}
-                    initial='hidden'
-                    animate='visible'
-                    >
-                        <FaIcons.FaArrowDown />
-                    </motion.div>
+                   <FaIcons.FaArrowDown />
                 </Arrow>
 
             <Social />
