@@ -2,8 +2,8 @@ import styled, { keyframes } from "styled-components";
 
 const BlogAnimation = keyframes`
      0% {
-    -webkit-transform: translateY(100px);
-            transform: translateY(100px);
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px);
     opacity: 0;
   }
     100% {
@@ -19,6 +19,7 @@ export const StyledBlog = styled.ul`
     flex-wrap: wrap;
     color:black;
     padding: 1rem;
+    animation: ${BlogAnimation} 2s ease-in-out;
 
     
 
@@ -29,7 +30,6 @@ export const StyledBlog = styled.ul`
        box-shadow: 
        rgba(0, 0, 0, 0.19) 0px 10px 20px, 
        rgba(0, 0, 0, 0.23) 0px 6px 6px;
-       animation: ${BlogAnimation} 2s ease-in-out;
    }
 
    li > img {

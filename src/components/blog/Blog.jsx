@@ -2,14 +2,19 @@ import { SectionContainer } from "../styled/Container.styled"
 import { BlogData } from "../data/BlogData"
 import { StyledBlog } from "../styled/Blog.Styled"
 import { Title } from "../styled/Title"
+import { ToggleVisibility } from "../../utilities/ToggleVisibility"
 
 export const Blog = () => {
+
+    const [isVisible] =ToggleVisibility()
+
     return (
+        
         <SectionContainer Bg='white'>
             <Title color='var(--background)'>
                 Blog Post
             </Title>
-            <StyledBlog>
+            {isVisible ? <StyledBlog>
             {BlogData.map((item, i) => (
                    <li key={i}>
                       <img src={item.imgUrl} alt="" />
@@ -19,7 +24,8 @@ export const Blog = () => {
                       </div>
                    </li>
                 ))}
-            </StyledBlog>
+            </StyledBlog> 
+            : null }
         </SectionContainer>
     )
 }
