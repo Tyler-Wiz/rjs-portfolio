@@ -7,6 +7,7 @@ export const Title = styled.h2`
         position: relative;
         display: inline-block;
         color: ${({color}) => color ? 'black' : 'white' };
+        
 
     &::after{
         content: '';

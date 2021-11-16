@@ -3,14 +3,13 @@ import styled from "styled-components";
  export const StyledEducation = styled.li`
      display: flex;
      flex-direction: column;
+     justify-content: center;
      flex:1;
-     margin:2rem;
+     margin:2rem 0 0 2rem;
      align-items: flex-start;
 
      h5{
         font-size: 1.2rem;
-        background-color: #d6d6d628;
-        border-radius:10px;
         font-weight:300;
      }
      
@@ -22,16 +21,18 @@ import styled from "styled-components";
  `
  export const EducationIcon = styled.div`
         color: var(--primary);
-        font-size:3.5rem;
+        font-size:2.5rem;
         position: relative;
+        align-self:center;
+        margin:0;
 
         &::before{
              position: absolute;
              content: '';
-             width: 2px;
+             width: 2%;
              height: 5rem;
              background-color: var(--primaryPink);
-             top: 38%;
+             top: 65%;
              left: 50%;
              transform: translateX(-50%);
         }

@@ -1,5 +1,5 @@
 import React from 'react'
-import * as MdIcons from 'react-icons/md'
+import * as FaIcons from 'react-icons/fa'
 import { Flex } from '../styled/Flex'
 import { StyledEducation, EducationIcon } from '../styled/Education.Styled'
 
@@ -8,7 +8,7 @@ export const Education = ({item:{year,school,degree}}) => {
         <div>
             <Flex>
                 <EducationIcon>
-                    <MdIcons.MdSchool />
+                    <FaIcons.FaBook />
                 </EducationIcon>
                 <StyledEducation>
                     <h5>{year}</h5>

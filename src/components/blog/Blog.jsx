@@ -1,4 +1,4 @@
-import { SectionContainer } from "../styled/Container.styled"
+
 import { BlogData } from "../data/BlogData"
 import { StyledBlog } from "../styled/Blog.Styled"
 import { Title } from "../styled/Title"
@@ -10,7 +10,7 @@ export const Blog = () => {
 
     return (
         
-        <SectionContainer Bg='white'>
+        <>
             <Title color='var(--background)'>
                 Blog Post
             </Title>
@@ -26,6 +26,6 @@ export const Blog = () => {
                 ))}
             </StyledBlog> 
             : null }
-        </SectionContainer>
+        </>
     )
 }

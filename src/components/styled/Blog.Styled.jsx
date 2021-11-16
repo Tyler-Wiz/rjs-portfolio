@@ -18,8 +18,9 @@ export const StyledBlog = styled.ul`
     justify-content: space-between;
     flex-wrap: wrap;
     color:black;
-    padding: 1rem;
+    padding: 2rem;
     animation: ${BlogAnimation} 2s ease-in-out;
+    list-style: none;
 
     
 
@@ -30,6 +31,9 @@ export const StyledBlog = styled.ul`
        box-shadow: 
        rgba(0, 0, 0, 0.19) 0px 10px 20px, 
        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+       transform: scale(1);
+       transition: transform 1s ease-in;
+       cursor: pointer;
    }
 
    li > img {
@@ -37,6 +41,11 @@ export const StyledBlog = styled.ul`
        height: 25rem;
        object-fit: cover;
        border-bottom: .5rem solid var(--primary);
+   }
+
+   li:hover {
+       transform: scale(0.98);
+       transition: transform .5s ease-in-out
    }
 
    li > div{
