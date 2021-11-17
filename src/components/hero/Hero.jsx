@@ -11,28 +11,33 @@ export const Hero = () => {
     return (
         <StyledHero>
             <Container>
-                <h1> Hi,</h1>
-                {/* Homepage Typewriter Effect */}
-                <h2>
-                        <Typewriter
-                            options={{
-                            strings: [
-                            "I'm A Photographer",
-                            "I'm A Front End Web-Developer",
-                            "I'm A UI/UX Designer",
-                            "I'm A Wordpress Theme Developer",
-                            ],
-                            autoStart: true,
-                            loop: true,
-                            cursorClassName:'hero_cursor',
-                            delay:50
-                            }}
-                        />
-                </h2>
-                <h3>I design and develop experiences that make people's live<span>Simple</span></h3>
-                
-                {/* Homepage Portfolio Button */}
-                <ButtonStyled>See Portfolio</ButtonStyled>
+                <div>
+                   {/* <img src="./Img/Home_Avatar.jpg" alt="" /> */}
+                </div>
+                <div>
+                    <h1> I'm Natalie Williams</h1>
+                    {/* Homepage Typewriter Effect */}
+                    <h1>
+                            <Typewriter
+                                options={{
+                                strings: [
+                                "A Photographer",
+                                "A Front End Web-Developer",
+                                "A UI/UX Designer",
+                                "A Wordpress Theme Developer",
+                                ],
+                                autoStart: true,
+                                loop: true,
+                                cursorClassName:'hero_cursor',
+                                delay:50
+                                }}
+                            />
+                    </h1>
+                    <h3>I design and develop experiences that make people's live<span>Simple</span></h3>
+                    
+                    {/* Homepage Portfolio Button */}
+                    <ButtonStyled>See Portfolio</ButtonStyled>
+                </div>
 
                 {/* Homepage ClickDown Arrow */}
                 <Arrow>

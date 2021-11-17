@@ -8,7 +8,7 @@ export const StyledHero = styled.section`
     display: flex;
     justify-content: center;
     text-align: center;
-
+    
     h2 {
         text-transform: none;
         color: var(--primary);
