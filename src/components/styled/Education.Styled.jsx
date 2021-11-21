@@ -32,7 +32,7 @@ import styled from "styled-components";
              width: 2%;
              height: 5rem;
              background-color: var(--primaryPink);
-             top: 65%;
+             top: 72%;
              left: 50%;
              transform: translateX(-50%);
         }
