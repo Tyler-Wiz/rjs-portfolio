@@ -1,11 +1,27 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.section`
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    margin: 3rem auto;
+    /* gap: 2rem; */
+
+    @media (min-width:750px) {
+        flex-direction:row-reverse;
+    }
+`
+
+
+
 export const StyledContact = styled.form`
     display: flex;
     flex-direction: column;
-    width: 100%;
+    flex: 3;
+    width: 95%;
     padding: 3rem;
-    margin: 3rem auto;
+    margin: 1rem auto;
     color: black;
     background-color: var(--lightgrey);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -19,7 +35,7 @@ export const StyledContact = styled.form`
         width: 100%;
         outline: none;
         resize: none;
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 5rem;
         margin: 1rem auto;
         background-color: white;
         border:3px solid var(--lightgrey);

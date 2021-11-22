@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledNav = styled.nav`
+export const Container = styled.nav`
     background-color: var(--background);
     position: fixed;
     height: 70vh;
@@ -30,9 +30,12 @@ export const StyledNav = styled.nav`
         margin-right: 2rem;
     }
 
-`
+    @media (min-width:750px) {
+         display:none; 
+    }
 
-export const HamburgerIcons = styled.div`
+`
+export const Hamburger = styled.div`
     z-index: 3;
     position: absolute;
     top: 1%;
@@ -40,4 +43,8 @@ export const HamburgerIcons = styled.div`
     cursor: pointer;
     font-size: 3rem;
     color: var(--primary);
+
+    @media (min-width:750px) {
+         display:none; 
+    }
 `

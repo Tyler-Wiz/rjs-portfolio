@@ -1,9 +1,9 @@
-import { FilterPort,FilterButton } from "../styled/FilterPortfolio.Styled"
+import { FilterPort,FilterButton  } from "../styled/Portfolio.Style";
+
 
 export const FilterPortolio = (props) => {
    
     return (
-        
       <FilterPort toggle={props.filter}>
           <FilterButton
           href="/#"
@@ -16,15 +16,13 @@ export const FilterPortolio = (props) => {
             href="/#"
             active={props.filter === "Front-End"}
             onClick={() => props.setFilter("Front-End")}
-            className={props.filter === "Front-End" ? "active" : "unactive"}
           >
-            Front-End
+            Front
           </FilterButton>
           <FilterButton
             href="/#"
             active={props.filter === "HTML"}
             onClick={() => props.setFilter("HTML")}
-            className={props.filter === "HTML" ? "active" : "unactive"}
           >
             HTML
           </FilterButton>
@@ -32,7 +30,6 @@ export const FilterPortolio = (props) => {
             href="/#"
             active={props.filter === "UX-UI"}
             onClick={() => props.setFilter("UX-UI")}
-            className={props.filter === "UX-UI" ? "active" : "unactive"}
           >
             UX/UI
           </FilterButton>
@@ -40,7 +37,6 @@ export const FilterPortolio = (props) => {
             href="/#"
             active={props.filter === "React"}
             onClick={() => props.setFilter("React")}
-            className={props.filter === "React" ? "active" : "unactive"}
           >
             React
           </FilterButton>

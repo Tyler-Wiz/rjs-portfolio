@@ -1,5 +1,4 @@
-import { SectionContainer } from "./styled/Container.styled"
-import { StyledContact, ContactInputFlex, ContactIcon, ContactTextArea, ContactButtonIcon } from "./styled/Contact.Styled"
+import { StyledContact, ContactInputFlex, ContactIcon, Wrapper, ContactTextArea, ContactButtonIcon } from "./styled/Contact.Styled"
 import * as HiIcons from 'react-icons/hi'
 import * as BsIcons from 'react-icons/bs'
 import * as TiIcons from 'react-icons/ti'
@@ -23,7 +22,7 @@ export const Contact = () => {
     }
 
     return (
-        <SectionContainer Bg='white'>
+        <Wrapper>
           <StyledContact action="" onSubmit={handleSubmit(onSubmit)}>
             <h3>Get In Touch With Me</h3>
                 <ContactInputFlex>
@@ -134,6 +133,6 @@ export const Contact = () => {
                   </Flex>
             </StyledContact> 
             <Address />
-        </SectionContainer>
+        </Wrapper>
     )
 }

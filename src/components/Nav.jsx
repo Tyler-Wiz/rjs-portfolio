@@ -1,16 +1,16 @@
 import { NavData } from './data/Data'
 import { Toggle } from '../utilities/Toggle'
 import { hamburger } from './data/Data'
-import { StyledNav, HamburgerIcons } from './styled/Nav.Styled'
+import { Container, Hamburger } from './styled/Nav.Styled'
 
 export const Nav = () => {
     const [IsOpen, openElement] = Toggle()
     return (
-        <div>  
-            <HamburgerIcons onClick={openElement}>
+        <>  
+            <Hamburger onClick={openElement}>
                   {IsOpen ? <span>{hamburger.close}</span> : <span>{hamburger.menu}</span> }
-            </HamburgerIcons>
-            <StyledNav ShowMenu={IsOpen} >
+            </Hamburger>
+            <Container ShowMenu={IsOpen} >
                 <ul>
                     {NavData.map((item, id) => (
                         <li key={id}>
@@ -21,7 +21,7 @@ export const Nav = () => {
                         </li>
                     ))}
                 </ul>
-            </StyledNav>
-        </div>
+            </Container>
+        </>
     )
 }

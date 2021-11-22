@@ -37,11 +37,6 @@ export const BlogData = [
         imgUrl:'./Img/Family.jpg',
         desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto praesentium facere. In est eaque quo nihil qui eius odit reiciendis quam explicabo, et asperiores eligendi, facilis beatae illum natus.',
     },
-    {
-        title:'Lagos set to commence construction of largest tech hub in Africa',
-        imgUrl:'./Img/Lagos.jpg',
-        desc:'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni architecto praesentium facere. In est eaque quo nihil qui eius odit reiciendis quam explicabo, et asperiores eligendi, facilis beatae illum natus.',
-    }
 ]
 
 export const EducationData = [

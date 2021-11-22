@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-import { Flex } from '../styled/Flex'
-import { StyledSkills } from "../styled/Skills.Styled";
+import { Wrapper,Container,Info } from "../styled/Skills.Styled";
 
 
 export const MySkills = ({item:{name, percentage}}) => {
@@ -28,15 +27,15 @@ export const MySkills = ({item:{name, percentage}}) => {
 
 
     return (
-        <li>
-            <Flex>
+        <Container>
+            <Info>
                 <h4>{name}</h4>
                 <h5>{percentage}</h5>
-            </Flex>
-            <StyledSkills>
+            </Info>
+            <Wrapper>
                 <div style={style}></div>
-            </StyledSkills>
-        </li>    
+            </Wrapper>
+        </Container>    
     
     )
 }

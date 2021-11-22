@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-export const StyledSkills = styled.div`
+export const Wrapper = styled.div`
     width: 100%;
-    height: .7rem;
+    height: .5rem;
     background-color: white;
-    margin-bottom: 1rem;
     border-radius: 10px;
 
 
@@ -21,4 +20,15 @@ export const StyledSkills = styled.div`
         opacity: 0;
         transition: 1s ease 0.3s;
         }
+`
+
+export const Container = styled.li`
+       
+`
+
+export const Info = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem auto;
 `

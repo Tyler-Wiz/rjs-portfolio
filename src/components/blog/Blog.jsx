@@ -1,8 +1,8 @@
-
 import { BlogData } from '../data/Data.jsx'
-import { StyledBlog } from "../styled/Blog.Styled"
-import { Title } from "../styled/Title"
+import { Container } from "../styled/Blog.Styled"
 import { ToggleVisibility } from "../../utilities/ToggleVisibility"
+import { Title, DestkopTitle } from "../styled/About.Styled"
+
 
 export const Blog = () => {
 
@@ -11,10 +11,14 @@ export const Blog = () => {
     return (
         
         <>
-            <Title color='var(--background)'>
-                Blog Post
+            <Title>
+              Blog Post
             </Title>
-            {isVisible ? <StyledBlog>
+            <DestkopTitle>
+                <h1>Latest</h1>
+                <h2>Blog Post</h2>
+            </DestkopTitle>
+            {isVisible ? <Container>
             {BlogData.map((item, i) => (
                    <li key={i}>
                       <img src={item.imgUrl} alt="" />
@@ -24,7 +28,7 @@ export const Blog = () => {
                       </div>
                    </li>
                 ))}
-            </StyledBlog> 
+            </Container> 
             : null }
         </>
     )

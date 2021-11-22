@@ -21,10 +21,23 @@ import styled from "styled-components";
  `
  export const EducationIcon = styled.div`
         color: var(--primary);
-        font-size:2.5rem;
+        font-size:2rem;
         position: relative;
         align-self:center;
-        margin:0;
+        z-index: 5;
+
+        &::after{
+             position: absolute;
+             content: '';
+             width: 180%;
+             height: 100%;
+             border-radius:50%;
+             background-color: #b3aaaa;
+             left: -36%;
+             bottom: 10%;
+             margin:auto;
+             z-index: -1;
+        }
 
         &::before{
              position: absolute;
@@ -32,8 +45,9 @@ import styled from "styled-components";
              width: 2%;
              height: 5rem;
              background-color: var(--primaryPink);
-             top: 72%;
+             top: 100%;
              left: 50%;
              transform: translateX(-50%);
         }
  `
+

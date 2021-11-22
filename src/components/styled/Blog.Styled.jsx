@@ -1,39 +1,29 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
+import { SlideUp } from "../../utilities/Animations/SlideUp";
 
-const BlogAnimation = keyframes`
-     0% {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px);
-    opacity: 0;
-  }
-    100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-    opacity: 1;
-  }
-`
-
-export const StyledBlog = styled.ul`
+export const Container = styled.ul`
     display: flex;
-    justify-content: space-between;
+    max-width: 1300px;
+    margin: 3rem auto;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    color:black;
-    padding: 2rem;
-    animation: ${BlogAnimation} 2s ease-in-out;
+    animation: ${SlideUp} 2s ease-in-out;
     list-style: none;
 
     
 
    li {
        position: relative;
-       width: 45rem;
-       margin-bottom: 2.5rem;
+       width: 40rem;
+       margin: 1rem;
        box-shadow: 
        rgba(0, 0, 0, 0.19) 0px 10px 20px, 
        rgba(0, 0, 0, 0.23) 0px 6px 6px;
        transform: scale(1);
        transition: transform 1s ease-in;
        cursor: pointer;
+       text-transform: capitalize;
    }
 
    li > img {

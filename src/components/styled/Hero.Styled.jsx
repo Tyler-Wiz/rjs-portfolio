@@ -1,12 +1,15 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
+import { ArrowAnnimation } from '../../utilities/Animations/Bounce';
 
-export const StyledHero = styled.section`
+export const Container = styled.section`
     background-color: ${({ theme }) => theme.body};;
     color: ${({ theme }) => theme.text};
     height: 100vh;
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
     
     h2 {
@@ -21,60 +24,7 @@ export const StyledHero = styled.section`
     }
 `
 
-const ArrowAnnimation = keyframes`
-    0% {
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-    opacity: 1;
-  }
-  24% {
-    opacity: 1;
-  }
-  40% {
-    -webkit-transform: translateY(-24px);
-            transform: translateY(-24px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  65% {
-    -webkit-transform: translateY(-12px);
-            transform: translateY(-12px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  82% {
-    -webkit-transform: translateY(-6px);
-            transform: translateY(-6px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  93% {
-    -webkit-transform: translateY(-4px);
-            transform: translateY(-4px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
-  }
-  25%,
-  55%,
-  75%,
-  87% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
-    opacity: 1;
-  }
-`
-
-export const Arrow = styled.div`
+export  const Arrow = styled.div`
     position: absolute;
     padding: 1.7rem 4rem;
     bottom: 0;
@@ -83,4 +33,22 @@ export const Arrow = styled.div`
     color:var(--primary);
     cursor: pointer;
     animation: ${ArrowAnnimation} 2s ease-in-out 1s infinite;
+`
+
+export const Button = styled.button`
+      background: none;
+      border: 1px solid white;
+      padding: 1.5rem 2.5rem;
+      border-radius:10px;
+      margin: 4rem 0;
+      color: var(--primary);
+      font-size:2rem;
+      cursor: pointer;
+      
+      &:hover{
+          transform: scale(0.90);
+          color: white;
+          border: 1px solid var(--primary);
+      }
+
 `
