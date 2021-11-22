@@ -1,11 +1,10 @@
-import { NavData } from './data/NavData'
+import { NavData } from './data/Data'
 import { Toggle } from '../utilities/Toggle'
-import { hamburger } from './data/NavData'
+import { hamburger } from './data/Data'
 import { StyledNav, HamburgerIcons } from './styled/Nav.Styled'
 
 export const Nav = () => {
     const [IsOpen, openElement] = Toggle()
-
     return (
         <div>  
             <HamburgerIcons onClick={openElement}>

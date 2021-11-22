@@ -12,9 +12,6 @@ export const Hero = () => {
         <StyledHero>
             <Container>
                 <div>
-                   {/* <img src="./Img/Home_Avatar.jpg" alt="" /> */}
-                </div>
-                <div>
                     <h1> I'm Natalie Williams</h1>
                     {/* Homepage Typewriter Effect */}
                     <h1>

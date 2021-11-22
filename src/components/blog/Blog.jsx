@@ -1,5 +1,5 @@
 
-import { BlogData } from "../data/BlogData"
+import { BlogData } from '../data/Data.jsx'
 import { StyledBlog } from "../styled/Blog.Styled"
 import { Title } from "../styled/Title"
 import { ToggleVisibility } from "../../utilities/ToggleVisibility"

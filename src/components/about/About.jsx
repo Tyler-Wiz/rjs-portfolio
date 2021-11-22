@@ -1,11 +1,11 @@
-import { aboutMe, Avatar } from "../data/AboutData"
+import { aboutMe, Avatar } from '../data/Data.jsx'
 import { MySkills } from "./MySkills"
-import { SkillData } from '../data/SkillData'
+import { SkillData } from '../data/Data.jsx'
 import { ToggleVisibility } from "../../utilities/ToggleVisibility"
 import { SectionContainer } from '../styled/Container.styled'
 import { StyledAbout } from "../styled/About.Styled"
 import { Work } from "./Work"
-import { EducationData, AchievementData } from "../data/E&AData"
+import { EducationData, AchievementData } from '../data/Data.jsx'
 import { Education } from "./Education"
 import { Experience } from "./Experience"
 import { Title } from "../styled/Title"

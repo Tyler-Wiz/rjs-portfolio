@@ -1,5 +1,5 @@
 import {useState, useEffect } from "react";
-import { PortfolioData } from "../data/PortfolioData";
+import { PortfolioData } from "../data/Data.jsx";
 import { FilterPortolio } from "./FilterPortolio";
 import {SectionContainer} from '../styled/Container.styled'
 import { StylePorfolio,PortfolioContent, PortfolioBox, PortfolioTitle } from "../styled/Portfolio.Style";
