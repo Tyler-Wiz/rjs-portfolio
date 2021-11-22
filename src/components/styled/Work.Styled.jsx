@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Container = styled.ul`
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-gap: 2rem;
     padding: 1rem;
     flex:1;
  
@@ -12,7 +12,7 @@ export const Container = styled.ul`
         display: flex;
         flex-direction:column;
         border: 1px solid grey;
-        max-width: 200px;
+        max-width: 170px;
         padding: 2rem;
         border-radius:7px;
     }
@@ -35,6 +35,6 @@ export const Container = styled.ul`
     }
 
    h5{
-    font-size:1.7rem;
+    font-size:1.4rem;
    }
 `
