@@ -83,9 +83,10 @@ export const CardWrapper =  styled.li`
 `
 
 export const FilterPort = styled.div`
-     max-width: 90%;
+     max-width: 100%;
      padding: 1rem;
      display: flex;
+     flex-wrap:wrap;
      justify-content: center;
      align-items: center;
      margin: 2rem auto;
@@ -95,8 +96,8 @@ export const FilterPort = styled.div`
 export const FilterButton = styled.button`
          padding: 1rem 2rem;
          border: none;
-         font-weight: 700;
-         margin-right:1rem;
+         font-weight: 500;
+         margin:1rem;
          text-transform: uppercase;
          background-color: var(--primary);
 

@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.ul`
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 2.5rem;
     padding: 1rem;
+    flex:1;
  
     li {
         display: flex;
         flex-direction:column;
         border: 1px solid grey;
-        width: 200px;
+        max-width: 200px;
         padding: 2rem;
         border-radius:7px;
     }

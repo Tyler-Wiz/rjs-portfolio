@@ -19,10 +19,6 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
 }
 
-body{
-    font-family: 'Montserrat', sans-serif;
-}
-
 
 html{
     font-size: 10px;

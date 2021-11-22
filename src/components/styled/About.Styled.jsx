@@ -38,6 +38,7 @@ export const AboutInfo =styled.ul`
     text-transform: capitalize;
     margin-bottom: 4rem;
     flex: 1;
+    font-weight: 200;
 
 
     li {
@@ -45,7 +46,7 @@ export const AboutInfo =styled.ul`
     }
 
     h5{
-        font-weight: 700;
+        font-weight: 600;
     }
 
     @media (min-width:750px) {
