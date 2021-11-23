@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     width: 100%;
-    height: .5rem;
+    height: .8rem;
     background-color: white;
     border-radius: 10px;
 
 
     & > div {
-        background: var(--primary);
-        box-shadow: 0 3px 3px -5px var(--primaryPink), 0 2px 5px var(--secondary);
+        background: ${({ theme }) => theme.primary};
         border-radius: 20px;
         color: #fff;
         display: flex;

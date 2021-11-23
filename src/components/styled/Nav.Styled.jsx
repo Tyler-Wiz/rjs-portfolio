@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.nav`
-    background-color: var(--background);
+
+
+export const MobileContainer = styled.nav`
+    background-color: ${({ theme }) => theme.body};
     position: fixed;
     height: 70vh;
     width: 60%;
@@ -16,7 +18,7 @@ export const Container = styled.nav`
     }
 
     a{
-        color: var(--lightgrey);
+        color: ${({ theme }) => theme.text};
         text-decoration:none;
         display: flex;
     }
@@ -35,6 +37,41 @@ export const Container = styled.nav`
     }
 
 `
+
+export const DesktopContainer =  styled.ul`
+    position: absolute;
+    top:3%;
+    right: 10%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style: none;
+    
+
+    li{
+        padding: 0;
+        
+    }
+
+    p{ font-size:1.6rem;}
+
+    a{
+        text-decoration:none;
+        color: ${({ theme }) => theme.text};
+    }
+
+    li:hover{
+        border-bottom:1px solid ${({ theme }) => theme.primary};
+        padding: 0;
+    }
+       
+    @media (max-width:750px) {
+         display:none; 
+    }
+`
+
+
 export const Hamburger = styled.div`
     z-index: 3;
     position: absolute;

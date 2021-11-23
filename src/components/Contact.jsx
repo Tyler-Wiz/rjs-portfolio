@@ -1,11 +1,12 @@
-import { StyledContact, ContactInputFlex, ContactIcon, Wrapper, ContactTextArea, ContactButtonIcon } from "./styled/Contact.Styled"
+import { Container, StyledContact, ContactInputFlex, ContactIcon, Wrapper, ContactTextArea, ContactButtonIcon, ButtonContainer } from "./styled/Contact.Styled"
 import * as HiIcons from 'react-icons/hi'
 import * as BsIcons from 'react-icons/bs'
 import * as TiIcons from 'react-icons/ti'
 import * as FiIcons from 'react-icons/fi'
-import { Flex } from "./styled/Flex"
 import { Address } from "./Address"
 import { useForm } from 'react-hook-form'
+
+
 
 
 export const Contact = () => {
@@ -23,6 +24,7 @@ export const Contact = () => {
 
     return (
         <Wrapper>
+        <Container>
           <StyledContact action="" onSubmit={handleSubmit(onSubmit)}>
             <h3>Get In Touch With Me</h3>
                 <ContactInputFlex>
@@ -123,16 +125,18 @@ export const Contact = () => {
             
                  {/* Contact Message Ends */}  
 
-                  <Flex>
+                 <ButtonContainer>
                     <button>
                         Submit
                     </button>
                     <ContactButtonIcon>
                         <FiIcons.FiSend/>
                     </ContactButtonIcon>
-                  </Flex>
+                 </ButtonContainer>
+                  
             </StyledContact> 
             <Address />
+        </Container>
         </Wrapper>
     )
 }

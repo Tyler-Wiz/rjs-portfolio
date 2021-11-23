@@ -1,5 +1,5 @@
 import { BlogData } from '../data/Data.jsx'
-import { Container } from "../styled/Blog.Styled"
+import { Container, Wrapper } from "../styled/Blog.Styled"
 import { ToggleVisibility } from "../../utilities/ToggleVisibility"
 import { Title, DestkopTitle } from "../styled/About.Styled"
 
@@ -10,7 +10,7 @@ export const Blog = () => {
 
     return (
         
-        <>
+        <Wrapper>
             <Title>
               Blog Post
             </Title>
@@ -30,6 +30,6 @@ export const Blog = () => {
                 ))}
             </Container> 
             : null }
-        </>
+        </Wrapper>
     )
 }

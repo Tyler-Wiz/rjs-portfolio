@@ -12,7 +12,7 @@ const SocialIcons = styled.li`
     border-radius:50%;
 
     a {
-        color: white;
+        color: ${({ theme }) => theme.primary};
     }
 `
 

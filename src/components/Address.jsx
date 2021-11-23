@@ -9,11 +9,9 @@ const AddressData = {
     phone:'+44 627 8199 282'
 }
 
-
-
 export const Address = () => {
-const {address, email, phone} = AddressData
 
+    const {address, email, phone} = AddressData
 
     return (
         <>

@@ -1,19 +1,23 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-    max-width: 1100px;
+    color: ${({ theme }) => theme.text};
+    background-color: ${({ theme }) => theme.background};
+`
+
+
+export const Container = styled.section`
+    max-width: 1200px;
+    padding: 7rem 0;
     display: flex;
     justify-content: space-between;
     flex-direction:column;
-    margin: 3rem auto;
-    /* gap: 2rem; */
-
+    margin: 0 auto;
+    
     @media (min-width:750px) {
         flex-direction:row-reverse;
     }
 `
-
-
 
 export const StyledContact = styled.form`
     display: flex;
@@ -23,7 +27,7 @@ export const StyledContact = styled.form`
     padding: 3rem;
     margin: 1rem auto;
     color: black;
-    background-color: var(--lightgrey);
+    background-color: ${({ theme }) => theme.body};
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
     p{ 
@@ -67,14 +71,14 @@ export const StyledContact = styled.form`
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: var(--primary);
+   background-color: ${({ theme }) => theme.primary};
    transform: scaleX(0);
    transition: transform 0.5s ease-in-out;
    transform-origin:right ;
    transition-delay: .05s;
    color: white;
    border-top-left-radius:10px;
-   border-left:1px solid var(--primary);
+   border-left:1px solid ${({ theme }) => theme.primary};
 } 
 
  button:hover{
@@ -105,7 +109,7 @@ export const ContactIcon = styled.div`
      left: 2%;
      transform: translateX(-2%), translateY(-30%);
      font-size:2.2rem;
-     color: var(--primary);
+     color: ${({ theme }) => theme.primary};
 
 
     &::after{
@@ -128,7 +132,7 @@ export const ContactTextArea = styled.div`
      left: 2%;
      transform:translateY(-10%);
      font-size:2.2rem;
-     color: var(--primary);
+     color: ${({ theme }) => theme.primary};
 
 
     &::after{
@@ -143,12 +147,17 @@ export const ContactTextArea = styled.div`
     }
 `
 
+export const ButtonContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+`
+
 export const ContactButtonIcon = styled.div` 
        display: flex;
        justify-content: center;
        align-items: center;
        font-size: 2rem;
-       background-color: var(--primary);
+       background-color: ${({ theme }) => theme.primary};
        padding: 0 1rem;
        border-bottom-right-radius:10px;
        color: white;      

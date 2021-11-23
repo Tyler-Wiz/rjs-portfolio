@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Container = styled.div` 
+         display: flex;
+         justify-content: space-between;
+`
+
  export const StyledEducation = styled.li`
      display: flex;
      flex-direction: column;
@@ -20,7 +25,7 @@ import styled from "styled-components";
 
  `
  export const EducationIcon = styled.div`
-        color: var(--primary);
+        color: ${({ theme }) => theme.primary};
         font-size:2rem;
         position: relative;
         align-self:center;
@@ -32,7 +37,7 @@ import styled from "styled-components";
              width: 180%;
              height: 100%;
              border-radius:50%;
-             background-color: #b3aaaa;
+             /* background-color: #b3aaaa; */
              left: -36%;
              bottom: 10%;
              margin:auto;
@@ -44,10 +49,9 @@ import styled from "styled-components";
              content: '';
              width: 2%;
              height: 5rem;
-             background-color: var(--primaryPink);
+             background-color: ${({ theme }) => theme.primary};
              top: 100%;
              left: 50%;
              transform: translateX(-50%);
         }
  `
-

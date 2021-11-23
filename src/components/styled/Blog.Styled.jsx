@@ -1,21 +1,27 @@
 import styled from "styled-components";
 import { SlideUp } from "../../utilities/Animations/SlideUp";
 
+export const Wrapper = styled.section`
+    background-color: ${({ theme }) => theme.body};
+    padding: 4rem 0;
+    color:${({ theme }) => theme.text};
+`
+
 export const Container = styled.ul`
     display: flex;
-    max-width: 1300px;
-    margin: 3rem auto;
+    max-width: 1500px;
+    margin:0 auto;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     animation: ${SlideUp} 2s ease-in-out;
     list-style: none;
+    color:black;
 
     
-
    li {
        position: relative;
-       width: 40rem;
+       width: 43rem;
        margin: 1rem;
        box-shadow: 
        rgba(0, 0, 0, 0.19) 0px 10px 20px, 
@@ -30,7 +36,7 @@ export const Container = styled.ul`
        width: 100%;
        height: 25rem;
        object-fit: cover;
-       border-bottom: .5rem solid var(--primary);
+       border-bottom: .5rem solid ${({ theme }) => theme.primary};
    }
 
    li:hover {

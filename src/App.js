@@ -1,7 +1,8 @@
 import { Hero } from './components/hero/Hero';
-import './assets/css/main/styles.css'
 import { About } from './components/about/About';
-import { GlobalStyles, lightTheme, darkTheme } from './components/styled/Global';
+import { GlobalStyles} from './components/styled/Global';
+import { lightTheme } from './components/ThemeSwitcher/LightTheme';
+import { darkTheme } from './components/ThemeSwitcher/DarkTheme';
 import { ThemeProvider } from 'styled-components'
 import {ThemeSwitch} from '../src/components/ThemeSwitcher/ThemeSwitch.jsx'
 import { ToggleTheme } from './components/ThemeSwitcher/ToggleTheme';

@@ -6,11 +6,17 @@ export const GlobalStyles = createGlobalStyle`
 ================== */
 
 :root{
-    --background:#1A1A1D;
+    --background:#FFFFFF;
     --lightgrey:#f1f1f1;
     --primary:#C3073F;
     --secondary:#6f2232;
-    --primaryPink:#950740;
+    --primarytext:#0B0C10;
+    
+    --darkBackground:#0B0C10;
+    --darkBackgroundS:#1F2833;
+    --darkPrimary:#66FCF1;
+    --darkSecondary:#45A29E;
+    --darkText:#C5C6C7;
 }
 
 *{
@@ -52,19 +58,3 @@ p {
 }
 
 `
-
-export const lightTheme = {
-    body:'var(--lightgrey)',
-    text: '#121212',
-    typing:'#000',
-    port:'#000',
-    themeSwitch:'var(--primary)'
-}
-
-export const darkTheme = {
-    body:'var(--background)',
-    text: '#fff',
-    typing:'var(--primary)',
-    port:'var(--lightgrey)',
-    themeSwitch:'#e4e3e3'
-}

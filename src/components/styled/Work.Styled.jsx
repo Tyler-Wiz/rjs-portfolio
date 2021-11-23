@@ -24,14 +24,14 @@ export const Container = styled.ul`
 
     h3 {
         font-size:3.5rem;
-        color: var(--primary);
+        color: ${({ theme }) => theme.primary};
         margin-right:2rem;
     }
 
     h4 {
         font-size:2.3rem;
         justify-self: start;
-        color: var(--primary);
+        color: ${({ theme }) => theme.primary};
     }
 
    h5{

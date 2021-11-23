@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Wrapper = styled.section`
     padding: 1.3rem;
-    background-color: white;  
+    background-color: ${({ theme }) => theme.background}; 
+    color: ${({ theme }) => theme.text}; 
 `
 
 export const Container = styled.section`
@@ -28,7 +29,7 @@ export const AboutImg = styled.img`
     height: 30rem;
     margin: 4rem auto;
     border-radius: 50%;
-    border: 6px solid var(--background);
+    border: 6px solid ${({ theme }) => theme.background};
 `
 
 export const AboutInfo =styled.ul`
@@ -80,7 +81,7 @@ export const DestkopTitle = styled.div`
         height: 0.1rem;
         width: 50%;
         margin: 0 auto;
-        background-color: var(--primary);
+        background-color: ${({ theme }) => theme.primary};
         position: absolute;
         top: 80%;
         left: 0;
@@ -99,13 +100,14 @@ export const Title = styled.h2`
     display: inline-block;
     text-transform: uppercase;
     font-weight: 700;
+    color: ${({ theme }) => theme.primary};
 
     &::after{
         content: '';
         height: 0.1rem;
         width: 50%;
         margin: 0 auto;
-        background-color: var(--primary);
+        background-color: ${({ theme }) => theme.primary};
         position: absolute;
         top: 80%;
         left: 0;

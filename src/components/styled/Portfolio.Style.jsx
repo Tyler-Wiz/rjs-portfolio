@@ -1,8 +1,9 @@
 import styled from "styled-components"
 
 export const Wrapper = styled.section`
-    background-color:var(--lightgrey);
+    background-color:${({ theme }) => theme.body};
     padding: 4rem 1rem;
+    color:${({ theme }) => theme.text};
 
 `
 
@@ -13,6 +14,7 @@ export const Container = styled.ul`
     align-items: center;
     flex-wrap:wrap;
     margin: 0 auto;
+    color:black;
 `
 
 export const Card = styled.div`
@@ -32,7 +34,7 @@ export const Card = styled.div`
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: var(--primary);
+        background-color: ${({ theme }) => theme.primary};
         transform: scaleX(0);
         transition: transform 0.5s ease-in-out;
         transform-origin:left ;
@@ -99,11 +101,11 @@ export const FilterButton = styled.button`
          font-weight: 500;
          margin:1rem;
          text-transform: uppercase;
-         background-color: var(--primary);
+         background-color: ${({ theme }) => theme.primary};
 
        &:hover{
          transform: scale(0.90);
-         color: var(--lightgrey);
+         color: ${({ theme }) => theme.Abtext};
        } 
 
       
