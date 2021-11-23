@@ -27,7 +27,7 @@ export const Container = styled.section`
 export  const Arrow = styled.div`
     position: absolute;
     padding: 1.7rem 4rem;
-    bottom: 0;
+    bottom: 2%;
     left: 0;
     font-size: 2rem;
     color:${({ theme }) => theme.primary};
@@ -37,7 +37,7 @@ export  const Arrow = styled.div`
 
 export const Button = styled.button`
       background: none;
-      border: 1px solid white;
+      border: 1px solid ${({ theme }) => theme.text};
       padding: 1.5rem 2.5rem;
       border-radius:10px;
       margin: 4rem 0;

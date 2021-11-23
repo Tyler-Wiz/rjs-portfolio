@@ -6,7 +6,8 @@ export const StlyedAddress = styled.div`
     flex: 1;
     flex-direction: column;
     padding: 3rem;
-    background-color: var(--primary);
+    background-color: ${({ theme }) => theme.primary};
+    color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     margin: 1rem auto;
     border-bottom-left-radius:10px;
