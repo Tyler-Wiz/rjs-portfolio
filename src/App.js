@@ -9,6 +9,7 @@ import { ToggleTheme } from './components/ThemeSwitcher/ToggleTheme';
 import { Portfolio } from './components/portfolio/Portfolio';
 import { Contact } from './components/Contact';
 import { Blog } from './components/blog/Blog';
+import { Footer } from './components/Footer';
 
 function App() {
   const [theme, toggleTheme ] = ThemeSwitch()
@@ -24,6 +25,7 @@ function App() {
           <Portfolio/>
           <Blog/>
           <Contact />
+          <Footer/>
       </ThemeProvider>
     </div>
   );

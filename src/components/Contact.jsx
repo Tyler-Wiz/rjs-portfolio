@@ -26,7 +26,6 @@ export const Contact = () => {
         <Wrapper>
         <Container>
           <StyledContact action="" onSubmit={handleSubmit(onSubmit)}>
-            <h3>Get In Touch With Me</h3>
                 <ContactInputFlex>
                     <ContactIcon>
                         <BsIcons.BsFillPersonFill />

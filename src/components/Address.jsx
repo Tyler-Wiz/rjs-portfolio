@@ -17,7 +17,6 @@ export const Address = () => {
         <>
             <StlyedAddress>
                 <h2>Contact Me</h2>
-
                 <AddressDtl>
                     <HiIcons.HiLocationMarker/>
                     <h5>{address}</h5>

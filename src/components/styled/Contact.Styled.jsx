@@ -11,7 +11,7 @@ export const Container = styled.section`
     padding: 7rem 0;
     display: flex;
     justify-content: space-between;
-    flex-direction:column;
+    flex-direction:column-reverse;
     margin: 0 auto;
     
     @media (min-width:750px) {

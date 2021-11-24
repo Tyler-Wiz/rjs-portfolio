@@ -10,8 +10,7 @@ export const StlyedAddress = styled.div`
     color: black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
     margin: 1rem auto;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
+
 
     h5 {
         margin-left: 1rem;
@@ -19,6 +18,9 @@ export const StlyedAddress = styled.div`
 
     h2 {
         margin-bottom: 3rem;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        font-weight: 700;
     }
 
     @media (min-width:750px) {
